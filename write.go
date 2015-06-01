@@ -73,7 +73,7 @@ func (c *Config) write(buf *bufio.Writer, header string) (err error) {
 								option, c.separator, tValue.v, "\n")); err != nil {
 								return err
 							}
-							c.RemoveOption(section, option)
+							// c.RemoveOption(section, option)
 							break
 						}
 					}
